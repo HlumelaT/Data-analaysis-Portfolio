@@ -1,0 +1,4 @@
+SELECT  DimProductCategory.EnglishProductCategoryName, DimProductSubcategory.EnglishProductSubcategoryName
+FROM DimProductCategory
+JOIN DimProductSubcategory ON DimProductCategory.ProductCategoryKey = DimProductSubcategory.ProductCategoryKey
+ORDER BY EnglishProductSubcategoryName, EnglishProductCategoryName ASC
